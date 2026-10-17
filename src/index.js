@@ -121,11 +121,11 @@ const normalizeText = (text) => {
 
 // 2. The Medical Translator: Map spoken words TO database acronyms
 const synonyms = {
-    // Squashed STT acronyms -> DB acronyms
+// Squashed STT acronyms -> DB acronyms
     "btct": ["bt", "ct"],
-    "rm": ["r", "m"],
-    "re": ["r", "e"],
-    "cs": ["c", "s"],
+    "rm": ["rm", "routine", "microscopy"],
+    "re": ["re", "routine", "examination"],
+    "cs": ["cs", "culture", "sensitivity"],
 
     // Spoken aliases -> DB words/acronyms
     "fasting": ["fbs", "fasting"],
